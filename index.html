@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Presente para Ana Clara</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&display=swap');
+        
+        body {
+            background-color: #ffeef3;
+            font-family: 'IBM Plex Serif', serif;
+            color: #5c3a4d;
+            text-align: center;
+            padding: 80px 20px 40px;
+            margin: 0;
+        }
+
+        h1 {
+            color: #ff93b5;
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .pix-code {
+            background-color: #fff;
+            padding: 18px;
+            border-radius: 12px;
+            margin: 20px auto;
+            max-width: 90%;
+            word-wrap: break-word;
+            border: 2px dashed #ff93b5;
+            color: #5c3a4d;
+            font-size: 1em;
+            box-shadow: 0 0 10px #ff93b544;
+        }
+
+        button.copy-btn {
+            background-color: #ff93b5;
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            margin: 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            box-shadow: 0 4px 6px #00000022;
+            transition: all 0.3s ease;
+        }
+
+        button.copy-btn:hover {
+            background-color: #e87fa3;
+            transform: scale(1.05);
+        }
+
+        .bow {
+            font-size: 2em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #ff93b5;
+            color: white;
+            font-size: 36px;
+            line-height: 70px;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 4px 6px #00000022;
+            z-index: 1000;
+        }
+
+        .back-button:hover {
+            background-color: #e87fa3;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://anaclarafaz11.my.canva.site/dagtwafqp-a" class="back-button">&lt;</a>
+    <span class="bow">🎀</span>
+    <h1>Presente para Ana Clara</h1>
+    <div class="subtitle">Clique no botão abaixo para copiar o código Pix ✨</div>
+    
+    <div class="pix-code" id="pix">
+00020126360014br.gov.bcb.pix0114+55819948169565204000053039865802BR5924LUAN JOSE PORTO DA SILVA6009Sao Paulo62290525REC6877F77E8F0C20007314736304FA62
+    </div>
+
+    <button class="copy-btn" onclick="copiarPix()">🎀 Copiar código Pix</button>
+
+    <script>
+        function copiarPix() {
+            var texto = document.getElementById("pix").innerText;
+            navigator.clipboard.writeText(texto);
+            alert("🎀 Código Pix copiado com sucesso!");
+        }
+    </script>
+</body>
+</html>
